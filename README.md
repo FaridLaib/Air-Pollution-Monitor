@@ -1,5 +1,5 @@
 # Air-Pollution-Monitor
-# SEN55 Serial Monitor Test — Arduino Leonardo / Pro Micro
+# SEN55 Serial Monitor Test — Arduino Leonardo / Pro Micro / ESP32-S3
 
 A minimal diagnostic sketch for the **Sensirion SEN55** environmental sensor, designed to verify sensor health and baseline readings via the Arduino Serial Monitor. No WiFi, no web server — just clean tabular output to confirm everything is working before integrating into a larger project.
 
@@ -11,11 +11,7 @@ A minimal diagnostic sketch for the **Sensirion SEN55** environmental sensor, de
 - Waits 35 seconds for the PM laser to warm up
 - Prints all 8 sensor values to Serial Monitor every 2 seconds in a formatted table:
 
-```
 
-```
-
----
 
 ## Hardware
 
@@ -23,7 +19,7 @@ A minimal diagnostic sketch for the **Sensirion SEN55** environmental sensor, de
 |-------|--------|
 | Arduino Leonardo | ✅ Tested |
 | SparkFun Pro Micro (5V/16MHz) | ✅ Tested |
-| Arduino Uno | ❌ Not compatible (no native USB, `while (!Serial)` will hang) |
+| ESP32-S3| ✅ Tested |
 
 **Why 5V boards?** The SEN55 requires 5V power for its fan and laser. On a 5V board the I2C lines run at 5V natively, so no level shifter is needed. Powering the SEN55 from a 3.3V microcontroller (e.g. ESP32) requires a bidirectional I2C level shifter (e.g. BSS138-based) to avoid corrupted readings.
 
