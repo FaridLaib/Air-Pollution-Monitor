@@ -70,6 +70,7 @@ In clean indoor air you should see:
 Values in the thousands indicate a wiring or voltage problem, not real air quality.
 
 For Arduino Serial output, it's below.
+
 ![Wiring diagram](Images/Arduino_Serial.png)
 
 For ESP32-S3 Serial output, it's below.
