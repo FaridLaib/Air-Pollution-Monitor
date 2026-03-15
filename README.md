@@ -11,7 +11,7 @@ A minimal diagnostic sketch for the **Sensirion SEN55** environmental sensor, de
 - Waits 35 seconds for the PM laser to warm up
 - Prints all 8 sensor values to Serial Monitor every 2 seconds in a formatted table:
 
-![Wiring diagram](Serial_Monitor.png)
+![Wiring diagram](main/Serial_Monitor.png)
 
 
 ## Hardware
