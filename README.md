@@ -11,8 +11,6 @@ A minimal diagnostic sketch for the **Sensirion SEN55** environmental sensor, de
 - Waits 35 seconds for the PM laser to warm up
 - Prints all 8 sensor values to Serial Monitor every 2 seconds in a formatted table:
 
-![Wiring diagram](Images/Arduino_Serial.png)
-
 
 ## Hardware
 
@@ -70,9 +68,15 @@ In clean indoor air you should see:
 - **Temperature** — may drop several degrees in the first minute as the STAR engine compensates for sensor self-heating
 
 Values in the thousands indicate a wiring or voltage problem, not real air quality.
-
+Output from Serial Monitor
+![Wiring diagram](Images/Arduino_Serial.png)
+For ESP32-S3 Serial output, it's below
+![Wiring diagram](Images/ESP32_Serial.png)
 ---
 
 ## Part of
 
 This sketch is a hardware validation tool for a larger **SEN55 WiFi Air Monitor** project running on ESP32-S3, serving a live web dashboard with charts and per-metric explanations. See the main project for the full modular ESP-IDF firmware.
+![Web Interface](Images/Main.png)
+![Web Interface](Images/PM_Values.png)
+
