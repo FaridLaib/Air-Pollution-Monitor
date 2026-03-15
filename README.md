@@ -22,7 +22,7 @@ A minimal diagnostic sketch for the **Sensirion SEN55** environmental sensor, de
 | SparkFun Pro Micro (5V/16MHz) | ✅ Tested |
 | ESP32-S3| ✅ Tested |
 
-**Why 5V boards?** The SEN55 requires 5V power for its fan and laser. On a 5V board the I2C lines run at 5V natively, so no level shifter is needed. Powering the SEN55 from a 3.3V microcontroller (e.g. ESP32) requires a bidirectional I2C level shifter (e.g. BSS138-based) to avoid corrupted readings.
+**Why 5V boards?** The SEN55 requires 5V power for its fan and laser. On a 5V board the I2C lines run at 5V natively, so no level shifter is needed. Powering the SEN55 from a 3.3V microcontroller (e.g. ESP32) requires a bidirectional I2C level shifter (e.g. BSS138-based) to avoid corrupted readings. The ESP32-S3 worked just fine, but as you will see below, the values were too large. I usedd a 4.7k resistor on both SDA, SCL lines. My wires were also very long so that could had an impact on the quality of the data.
 
 ---
 
