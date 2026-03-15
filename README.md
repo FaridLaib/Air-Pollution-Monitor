@@ -1,5 +1,6 @@
 # Air-Pollution-Monitor
 # SEN55 Serial Monitor Test — Arduino Leonardo / Pro Micro / ESP32-S3
+
 ![Wiring diagram](Images/Sen55.png)
 
 A minimal diagnostic sketch for the **Sensirion SEN55** environmental sensor, designed to verify sensor health and baseline readings via the Arduino Serial Monitor. No WiFi, no web server — just clean tabular output to confirm everything is working before integrating into a larger project.
